@@ -3,18 +3,26 @@
 client_id = "bba1d98a0db601224759e3e20251189a"
 name = "Annan"
 handle = "annan"
-application_url = "https://facts-quantities-extraction-rich.trycloudflare.com"
+application_url = "https://celtic-morrison-counting-okay.trycloudflare.com"
 embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_shipping, write_shipping, read_orders,write_orders,read_locales,read_discounts, read_customers, read_inventory, write_inventory, read_locations, read_markets, read_products"
 
 [auth]
 redirect_urls = [
-  "https://facts-quantities-extraction-rich.trycloudflare.com/auth/callback",
-  "https://facts-quantities-extraction-rich.trycloudflare.com/auth/shopify/callback",
-  "https://facts-quantities-extraction-rich.trycloudflare.com/api/auth/callback"
+  "https://celtic-morrison-counting-okay.trycloudflare.com/auth/callback",
+  "https://celtic-morrison-counting-okay.trycloudflare.com/auth/shopify/callback",
+  "https://celtic-morrison-counting-okay.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
 api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177102979073/Annan"
 
 [pos]
 embedded = false
@@ -22,3 +30,4 @@ embedded = false
 [build]
 dev_store_url = "annan-test.myshopify.com"
 automatically_update_urls_on_dev = true
+include_config_on_deploy = true
