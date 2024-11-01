@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "bba1d98a0db601224759e3e20251189a"
+name = "Annan"
+handle = "annan"
+application_url = "https://facts-quantities-extraction-rich.trycloudflare.com"
+embedded = true
+
+[auth]
+redirect_urls = [
+  "https://facts-quantities-extraction-rich.trycloudflare.com/auth/callback",
+  "https://facts-quantities-extraction-rich.trycloudflare.com/auth/shopify/callback",
+  "https://facts-quantities-extraction-rich.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "annan-test.myshopify.com"
+automatically_update_urls_on_dev = true
