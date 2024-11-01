@@ -1,2 +1,3 @@
-export { ProductsCard } from "./ProductsCard";
-export * from "./providers";
+export { ProductsCard } from './ProductsCard';
+export { ProductsTable } from './ProductsTable';
+export * from './providers';

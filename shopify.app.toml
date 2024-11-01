@@ -1,9 +1,9 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "bba1d98a0db601224759e3e20251189a"
+client_id = "126e1037042d74504dee7d065053cf82"
 name = "Annan"
 handle = "annan"
-application_url = "https://inspection-lat-mail-shorts.trycloudflare.com"
+application_url = "https://injury-excluded-packets-allen.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,21 +12,21 @@ scopes = "read_shipping, write_shipping, read_orders,write_orders,read_locales,r
 
 [auth]
 redirect_urls = [
-  "https://inspection-lat-mail-shorts.trycloudflare.com/auth/callback",
-  "https://inspection-lat-mail-shorts.trycloudflare.com/auth/shopify/callback",
-  "https://inspection-lat-mail-shorts.trycloudflare.com/api/auth/callback",
+  "https://injury-excluded-packets-allen.trycloudflare.com/auth/callback",
+  "https://injury-excluded-packets-allen.trycloudflare.com/auth/shopify/callback",
+  "https://injury-excluded-packets-allen.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
 api_version = "2024-10"
 
-[[webhooks.subscriptions]]
-topics = ["orders/create"]
-uri = "arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177102979073/Annan"
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177102979073/Annan"
 
-[[webhooks.subscriptions]]
-topics = ["customers/create"]
-uri = "arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177102979073/Annan"
+  [[webhooks.subscriptions]]
+  topics = [ "customers/create" ]
+  uri = "arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177102979073/Annan"
 
 [pos]
 embedded = false
