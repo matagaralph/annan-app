@@ -47,10 +47,10 @@ export default {
   },
   ORDERS_CREATE: {
     deliveryMethod: DeliveryMethod.EventBridge,
-    arn: 'arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177102979073/Annan',
+    arn: 'arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177223663617/Annan',
   },
   CUSTOMERS_CREATE: {
     deliveryMethod: DeliveryMethod.EventBridge,
-    arn: 'arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177102979073/Annan',
+    arn: 'arn:aws:events:us-west-1::event-source/aws.partner/shopify.com/177223663617/Annan',
   },
 };
