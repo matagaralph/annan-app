@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "1b8d00d1bf76110218d3976b5f20c26d"
-application_url = "https://progressive-seattle-already-finite.trycloudflare.com"
+application_url = "https://crime-griffin-nz-election.trycloudflare.com"
 embedded = true
 name = "Testing"
 handle = "testing-1593"
@@ -14,23 +14,21 @@ automatically_update_urls_on_dev = true
 [webhooks]
 api_version = "2024-10"
 
-[[webhooks.subscriptions]]
-topics = ["app/uninstalled"]
-uri = "/webhooks/app/uninstalled"
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
 
-[[webhooks.subscriptions]]
-topics = ["orders/create"]
-uri = "/webhooks"
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "/webhooks/app/orders-create"
 
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "/webhooks/app/products-create"
 
-[[webhooks.subscriptions]]
-compliance_topics = [
-  "customers/data_request",
-  "customers/redact",
-  "shop/redact",
-]
-uri = "/webhooks"
-
+  [[webhooks.subscriptions]]
+  compliance_topics = [ "customers/data_request", "customers/redact", "shop/redact" ]
+  uri = "/webhooks"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
@@ -38,9 +36,9 @@ scopes = "read_shipping, write_shipping, read_orders,write_orders,read_locales,r
 
 [auth]
 redirect_urls = [
-  "https://progressive-seattle-already-finite.trycloudflare.com/auth/callback",
-  "https://progressive-seattle-already-finite.trycloudflare.com/auth/shopify/callback",
-  "https://progressive-seattle-already-finite.trycloudflare.com/api/auth/callback",
+  "https://crime-griffin-nz-election.trycloudflare.com/auth/callback",
+  "https://crime-griffin-nz-election.trycloudflare.com/auth/shopify/callback",
+  "https://crime-griffin-nz-election.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

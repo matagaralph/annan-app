@@ -39,5 +39,17 @@ model Order {
   order_number Int?
   api_version  String
   payload      String
+  order_id     String?
   status       Boolean @default(false)
+}
+
+model Product {
+  id          Int     @id @default(autoincrement())
+  shop        String
+  topic       String
+  webhook_id  String
+  api_version String
+  payload     String
+  product_id  String
+  status      Boolean @default(false)
 }
