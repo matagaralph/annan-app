@@ -61,7 +61,12 @@
     ]
   },
   "trustedDependencies": [
-    "@shopify/plugin-cloudflare"
+    "@parcel/watcher",
+    "@prisma/client",
+    "@prisma/engines",
+    "@shopify/plugin-cloudflare",
+    "esbuild",
+    "prisma"
   ],
   "resolutions": {},
   "overrides": {}
