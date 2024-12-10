@@ -5,6 +5,8 @@ EXPOSE 3000
 
 ENV NODE_ENV=production
 
+COPY prisma/ /app/prisma/
+
 FROM dependencies-env AS development-dependencies-env
 COPY ./package.json bun.lockb /app/
 WORKDIR /app
