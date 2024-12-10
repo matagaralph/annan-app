@@ -27,8 +27,8 @@ importers:
         specifier: ^4.1.2
         version: 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@shopify/cli':
-        specifier: ^3.63.1
-        version: 3.71.5
+        specifier: ^3.72.0
+        version: 3.72.0
       '@shopify/polaris':
         specifier: ^12.0.0
         version: 12.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1532,8 +1532,8 @@ packages:
   '@shopify/app-bridge-types@0.0.16':
     resolution: {integrity: sha512-UjKot8gOAv0qc9dxaooQv9fl1ob6zlupuOAgexj++H8cYQuAD8I6cbJ/whY4skqRXM/qZn68vuERq3eeDlByJg==}
 
-  '@shopify/cli@3.71.5':
-    resolution: {integrity: sha512-tDCnQDK17axtvHO+FfSBFWlrPW2yzId4VXpgGRpEZmi2MeV2+SG67vXPhAAXGG3RGvGsQhmtZzfx8VPb5CvrOw==}
+  '@shopify/cli@3.72.0':
+    resolution: {integrity: sha512-Jb1Umti3xj0fpSXIWooI5e/KDbYQhEdxywSq1rRCJSIMPhKyE2MFGA3wq4RfLL8IsJsw9zNz7dfgrptGuS9inw==}
     engines: {node: ^18.20.0 || >=20.10.0}
     os: [darwin, linux, win32]
     hasBin: true
@@ -6600,7 +6600,7 @@ snapshots:
 
   '@shopify/app-bridge-types@0.0.16': {}
 
-  '@shopify/cli@3.71.5':
+  '@shopify/cli@3.72.0':
     dependencies:
       '@ast-grep/napi': 0.11.0
       esbuild: 0.19.8
@@ -6883,7 +6883,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.0)
       '@vanilla-extract/babel-plugin-debug-ids': 1.1.0
       '@vanilla-extract/css': 1.16.1
-      esbuild: 0.17.6
+      esbuild: 0.19.8
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -7850,7 +7850,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -7878,7 +7878,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
