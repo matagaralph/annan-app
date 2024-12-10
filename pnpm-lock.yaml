@@ -30,11 +30,11 @@ importers:
         specifier: ^3.63.1
         version: 3.71.5
       '@shopify/polaris':
-        specifier: ^12.0.0
-        version: 12.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^13.9.1
+        version: 13.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@shopify/shopify-app-remix':
         specifier: ^3.4.0
-        version: 3.5.1(@remix-run/node@2.15.1(typescript@5.7.2))(@remix-run/react@2.15.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@shopify/polaris@12.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(typescript@5.7.2)
+        version: 3.5.1(@remix-run/node@2.15.1(typescript@5.7.2))(@remix-run/react@2.15.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@shopify/polaris@13.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(typescript@5.7.2)
       '@shopify/shopify-app-session-storage-prisma':
         specifier: ^5.1.5
         version: 5.2.0(@prisma/client@5.22.0(prisma@5.22.0))(@shopify/shopify-api@11.6.1)(@shopify/shopify-app-session-storage@3.0.9(@shopify/shopify-api@11.6.1))(prisma@5.22.0)
@@ -1551,22 +1551,19 @@ packages:
     resolution: {integrity: sha512-Lln7vglzLK9KiYhl9ucQFVM7ArlpUM21xkDriBX8kVrqsoBsi+4vFIjf1wjhNPT0J/zHMjky7jiTnxVfdm+xXw==}
     engines: {node: '>=18.12.0'}
 
-  '@shopify/polaris-icons@8.11.1':
-    resolution: {integrity: sha512-2HLzvJWMejKIwS5P2bs7k5CAjBKwPnD/iy9ncPzcgqRjmFInBXLtUXFQhPWDw6JwXzb1ZjNQK/ssTctcfz87Sw==}
-    engines: {node: ^16.17.0 || >=18.12.0}
+  '@shopify/polaris-icons@9.3.0':
+    resolution: {integrity: sha512-fnH5Lcd3WFZNjlxGYGNtnjeq3P2xonRV8vChW4PqBfxdKlY/GQ/3/rIuxHzIgmLL0zukeZUaqERUN0lwSU+Xmg==}
+    engines: {node: '>=20.10.0'}
     peerDependencies:
       react: '*'
-    peerDependenciesMeta:
-      react:
-        optional: true
 
-  '@shopify/polaris-tokens@8.10.0':
-    resolution: {integrity: sha512-y4PDtRbFKGHwA6Lu7a3L4N9SDP6gZv4tw6u0viumtcXcbF0T2j1xPmyuJZNc9c7vmhNSARCg27NGQFpPgxuaEg==}
-    engines: {node: ^16.17.0 || >=18.12.0}
+  '@shopify/polaris-tokens@9.4.0':
+    resolution: {integrity: sha512-jnCNxq9+XfWP9ijkvSsgQH5o3PeYgfWo4/zymoO+AeJvyngL+4LvlZ/nofvYj9DXLo74taTk05xui9qt22Zy2Q==}
+    engines: {node: '>=20.10.0'}
 
-  '@shopify/polaris@12.27.0':
-    resolution: {integrity: sha512-Y8yus6iEjcfW2ZtEJtlqxbWeDJqTX3S/MOLH4GWRvU5gFYJQhlaHaETs0+OimbhEpO95mXbY8qB+KnIJaVBHwA==}
-    engines: {node: ^16.17.0 || >=18.12.0}
+  '@shopify/polaris@13.9.1':
+    resolution: {integrity: sha512-jSBEDP3LPZlPWJbtwTLdW72K1LS73ocB7x3VXzbi1DvpxUcmVp3K1YxhdKGEKmwHAkcBqIvZCrVNS2jcaTBmhQ==}
+    engines: {node: '>=20.10.0'}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -6620,18 +6617,18 @@ snapshots:
 
   '@shopify/network@3.3.0': {}
 
-  '@shopify/polaris-icons@8.11.1(react@18.3.1)':
-    optionalDependencies:
+  '@shopify/polaris-icons@9.3.0(react@18.3.1)':
+    dependencies:
       react: 18.3.1
 
-  '@shopify/polaris-tokens@8.10.0':
+  '@shopify/polaris-tokens@9.4.0':
     dependencies:
       deepmerge: 4.3.1
 
-  '@shopify/polaris@12.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@shopify/polaris@13.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@shopify/polaris-icons': 8.11.1(react@18.3.1)
-      '@shopify/polaris-tokens': 8.10.0
+      '@shopify/polaris-icons': 9.3.0(react@18.3.1)
+      '@shopify/polaris-tokens': 9.4.0
       '@types/react': 18.3.14
       '@types/react-dom': 18.3.3(@types/react@18.3.14)
       '@types/react-transition-group': 4.4.11
@@ -6656,7 +6653,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@shopify/shopify-app-remix@3.5.1(@remix-run/node@2.15.1(typescript@5.7.2))(@remix-run/react@2.15.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@shopify/polaris@12.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(typescript@5.7.2)':
+  '@shopify/shopify-app-remix@3.5.1(@remix-run/node@2.15.1(typescript@5.7.2))(@remix-run/react@2.15.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2))(@shopify/polaris@13.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(typescript@5.7.2)':
     dependencies:
       '@remix-run/react': 2.15.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)
       '@remix-run/server-runtime': 2.15.1(typescript@5.7.2)
@@ -6669,7 +6666,7 @@ snapshots:
       semver: 7.6.3
     optionalDependencies:
       '@remix-run/node': 2.15.1(typescript@5.7.2)
-      '@shopify/polaris': 12.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@shopify/polaris': 13.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - encoding
       - typescript
@@ -6883,7 +6880,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.0)
       '@vanilla-extract/babel-plugin-debug-ids': 1.1.0
       '@vanilla-extract/css': 1.16.1
-      esbuild: 0.17.6
+      esbuild: 0.19.8
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -7850,7 +7847,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -7878,7 +7875,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
