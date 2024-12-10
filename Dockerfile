@@ -1,23 +1,20 @@
-FROM oven/bun:1 AS dependencies-env
-WORKDIR /app
-COPY . .
+FROM node:18-alpine
 
 EXPOSE 3000
 
+WORKDIR /app
+
 ENV NODE_ENV=production
 
-FROM dependencies-env AS development-dependencies-env
-RUN bun install --frozen-lockfile
+COPY package.json package-lock.json* ./
 
-FROM dependencies-env AS production-dependencies-env
-RUN bun install --production --frozen-lockfile
+RUN npm ci --omit=dev && npm cache clean --force
+# Remove CLI packages since we don't need them in production by default.
+# Remove this line if you want to run CLI commands in your container.
+RUN npm remove @shopify/cli
 
-FROM dependencies-env AS build-env
-COPY --from=development-dependencies-env /app/node_modules /app/node_modules
-RUN bun run build
+COPY . .
 
-FROM dependencies-env
-COPY --from=production-dependencies-env /app/node_modules /app/node_modules
-COPY --from=build-env /app/build /app/build
+RUN npm run build
 
-CMD ["bun", "run", "docker-start"]
+CMD ["npm", "run", "docker-start"]
