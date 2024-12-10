@@ -1,20 +1,18 @@
-FROM node:22-alpine
+FROM node:20-alpine 
+RUN npm i -g pnpm
 
 EXPOSE 3000
 
-WORKDIR /app
+WORKDIR /app 
 
 ENV NODE_ENV=production
 
-COPY package.json package-lock.json* ./
+COPY package.json pnpm-lock.yaml  ./
 
-RUN npm ci --omit=dev && npm cache clean --force
-# Remove CLI packages since we don't need them in production by default.
-# Remove this line if you want to run CLI commands in your container.
-RUN npm remove @shopify/cli
+RUN pnpm i --prod --frozen-lockfile
 
 COPY . .
 
-RUN npm run build
+RUN pnpm build
 
-CMD ["npm", "run", "docker-start"]
+CMD ["pnpm", "docker-start"]
